@@ -1,14 +1,14 @@
 {
   "stage": "groundwork_original_fixture",
-  "fixture_sha256": "99b5dbd7fd687a777e7b5236850cb750e5a380f779cb9aaa7143fac1e7f796e6",
+  "fixture_sha256": "278db2b800a74c3caaca30040bc6f0c21ff5191790bdce492e88bc5a05c47b75",
   "host_executed": true,
   "host_output": "8 malformed variants and 64 truncated headers rejected without execution.\nunknown import rejected: import not explicitly allowed by host\npermission failure handled: host rejected final memory permissions\nfixture entry returned 42; imports=1 relocations=1\nHOST LAB PASS: mapping, relocation, allowlisted import, entry call, W^X permissions and cleanup.\nThis is an original fixture on Windows, NOT a PS4 result and NOT GTA VI.\n",
   "native_objects_cross_compiled": true,
+  "native_executable_linked": true,
+  "native_executable_sha256": "efc0d175ca305c5acc78cc83dbb56fb7395db19e711990096515d78a96643eb8",
   "native_code_executed": false,
   "ps4_tested": false,
   "gta_vi_booted": false,
   "installable_pkg_built": false,
-  "writable_executable_pages_requested": false,
-  "host_abi_boundary": "fixture MS-x64 call -> explicit MS ABI bridge -> non-inlined System V ABI helper; Windows host only",
-  "native_runtime_evidence": "None; ELF64 FreeBSD x86-64 object compilation only"
+  "writable_executable_pages_requested": false
 }

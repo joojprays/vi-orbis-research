@@ -11,7 +11,7 @@
 - Use OpenOrbis and self-authored synthetic programs for initial loader experiments.
 - Keep PS4-native execution distinct from Linux, Wine and remote streaming. They are not interchangeable milestones.
 
-The current repository contains a reproducible **read-only upstream source audit** and a strict **original-fixture loader experiment**. The Windows host experiment mapped, relocated, bound and executed our own fixture successfully; the loader and Orbis adapter also cross-compiled. **There is no PS4 execution evidence yet.** Work on Morrowind/OpenMW is a separate project and does not count as GTA VI compatibility evidence.
+The current repository contains a reproducible **read-only upstream source audit** and a strict **original-fixture loader experiment**. The Windows host experiment mapped, relocated, bound and executed our own fixture successfully; the loader, Orbis adapter and gated embedded-fixture runner also compiled and linked to a native ELF. **There is no PS4 execution evidence yet.** Work on Morrowind/OpenMW is a separate project and does not count as GTA VI compatibility evidence.
 
 ## Roadmap
 
@@ -31,7 +31,7 @@ No percentage is assigned to untested work. An upstream's PC results do not tran
 
 Build an original tiny PE32+ fixture and prove mapping, base relocation, an explicitly allowed imported function, and the Windows-x64/Orbis calling-convention boundary. Reject unsupported features visibly. Verify on a host before proposing an attended PS4 test. A fixture passing is **groundwork**, never “GTA VI boots.”
 
-The host portion now passes. See [loader lab, limitations and reproduction](lab/README.md) and [published result](research/loader-host-result.json). The Orbis implementation has only been compiled, not executed or installed on a console.
+The host portion now passes. See [loader lab, limitations and reproduction](lab/README.md) and [published result](research/loader-host-result.json). The Orbis implementation and its runner have compiled and linked, but have not executed or been installed on a console.
 
 ## Reproduce the source audit
 

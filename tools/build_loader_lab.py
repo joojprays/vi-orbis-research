@@ -33,9 +33,9 @@ windows=['--target=x86_64-pc-windows-msvc','-O1','-ffreestanding','-fno-stack-pr
          '-fno-unwind-tables','-fno-asynchronous-unwind-tables','-msse2','-mno-avx','-mno-avx2']
 for name in ['fixture','import_stub']:
     run([clang,*windows,'-c',ROOT/'fixtures'/(name+'.c'),'-o',out/(name+'.obj')])
-run([lld,'-flavor','link','/dll','/noentry','/nodefaultlib',out/'import_stub.obj',
+run([lld,'-flavor','link','/dll','/timestamp:0','/noentry','/nodefaultlib',out/'import_stub.obj',
      '/out:'+str(out/'vi-fixture.dll'),'/implib:'+str(out/'vi-fixture.lib')])
-run([lld,'-flavor','link','/nodefaultlib','/entry:lab_entry','/subsystem:console',
+run([lld,'-flavor','link','/nodefaultlib','/timestamp:0','/entry:lab_entry','/subsystem:console',
      '/dynamicbase','/fixed:no','/align:16384','/filealign:512',
      '/out:'+str(out/'fixture.exe'),out/'fixture.obj',out/'vi-fixture.lib'])
 run([hostcc,'-std=c11','-O2','-Wall','-Wextra','-Werror','-I'+str(ROOT/'src'),
@@ -50,13 +50,30 @@ for source in [ROOT/'src/pe_fixture_loader.c',ROOT/'platform/orbis_memory.c']:
     obj=out/(source.stem+'-orbis.o')
     run([clang,*native_flags,'-c',source,'-o',obj]);native.append(obj)
 run([llvm/'llvm-ar.exe','rcs',out/'libvi_fixture_orbis.a',*native])
+# Embed only the self-authored fixture produced above; no external input path.
+fixture=(out/'fixture.exe').read_bytes()
+(out/'embedded_fixture.h').write_text(
+    'static const unsigned char vi_embedded_fixture[] = {\n'+
+    ',\n'.join(','.join(str(b) for b in fixture[i:i+32]) for i in range(0,len(fixture),32))+
+    '\n};\n',encoding='utf-8')
+main_obj=out/'orbis_fixture_main.o'
+run([clang,*native_flags,'-I'+str(ROOT/'platform'),'-I'+str(out),
+     '-c',ROOT/'lab/orbis_fixture_main.c','-o',main_obj])
+elf=out/'original-fixture-orbis.elf'
+run([lld,'-flavor','gnu','-m','elf_x86_64','-pie','--script',sdk/'link.x',
+     '--eh-frame-hdr','-L'+str(sdk/'lib'),sdk/'lib/crt1.o',main_obj,*native,
+     '--start-group','-lc','-lkernel','-lSceLibcInternal',
+     '-lclang_rt.builtins-x86_64','--end-group','-o',elf])
+elf_headers=run([llvm/'llvm-readelf.exe','-h',elf])
+if 'ELF64' not in elf_headers:raise RuntimeError('Unexpected linked executable format')
 headers=run([llvm/'llvm-readelf.exe','-h',*native])
 if headers.count('ELF64')!=2:raise RuntimeError('Unexpected native object format')
 record={'stage':'groundwork_original_fixture','fixture_sha256':hashlib.sha256((out/'fixture.exe').read_bytes()).hexdigest(),
         'host_executed':True,'host_output':host_output,'native_objects_cross_compiled':True,
+        'native_executable_linked':True,'native_executable_sha256':hashlib.sha256(elf.read_bytes()).hexdigest(),
         'native_code_executed':False,'ps4_tested':False,'gta_vi_booted':False,
         'installable_pkg_built':False,'writable_executable_pages_requested':False}
 (out/'result.json').write_text(json.dumps(record,indent=2)+'\n',encoding='utf-8')
 # Commands remain local: they contain machine-specific paths, not published evidence.
 (out/'commands.json').write_text(json.dumps(commands,indent=2)+'\n',encoding='utf-8')
-print('Original host fixture passed; native objects compiled. No console action.',flush=True)
+print('Original host fixture passed; native executable linked but not executed. No console action.',flush=True)

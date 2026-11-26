@@ -2,7 +2,7 @@
  * Native adapter: documented toolchain calls only. Permission failures stop
  * the fixture. No kernel patch, permission workaround, or implicit RWX memory.
  */
-#include "pe_fixture_loader.h"
+#include "orbis_memory.h"
 #include <orbis/libkernel.h>
 #include <stdint.h>
 #include <string.h>
