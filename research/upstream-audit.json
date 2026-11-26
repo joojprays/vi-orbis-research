@@ -1,0 +1,470 @@
+{
+  "captured_utc": "2026-11-26T19:58:21.059104+00:00",
+  "method": "Static metadata and selected public text only; not a runtime validation",
+  "game_files_downloaded": false,
+  "third_party_source_executed": false,
+  "projects": [
+    {
+      "repo": "Marvisak/VIctory",
+      "default_branch": "main",
+      "commit": "63bcca43c6a00a758510398fa43096ce7e4f7df0",
+      "license": "GPL-3.0",
+      "is_github_fork": false,
+      "tree_was_truncated": false,
+      "files": [
+        {
+          "path": "README.md",
+          "source_url": "https://raw.githubusercontent.com/Marvisak/VIctory/63bcca43c6a00a758510398fa43096ce7e4f7df0/README.md",
+          "sha256": "7aa3bf9a409402b32f6d645b36cf90277c790b174f7264d210f018959dc41402",
+          "markers_lexical_only": {
+            "windows": 14,
+            "d3d12_dxil": 13,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Marvisak/VIctory/63bcca43c6a00a758510398fa43096ce7e4f7df0/Cargo.toml",
+          "sha256": "e67562f7bf059fc64a653f54f5c8702ee36d5d857654b1093439dc6b6e071f8f",
+          "markers_lexical_only": {
+            "windows": 3,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "docs/architecture.md",
+          "source_url": "https://raw.githubusercontent.com/Marvisak/VIctory/63bcca43c6a00a758510398fa43096ce7e4f7df0/docs/architecture.md",
+          "sha256": "99d74875e9a0a737e5318816796d333a6789812346adec2a29002969f8fda943",
+          "markers_lexical_only": {
+            "windows": 1,
+            "d3d12_dxil": 4,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "crates/victory-loader/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Marvisak/VIctory/63bcca43c6a00a758510398fa43096ce7e4f7df0/crates/victory-loader/Cargo.toml",
+          "sha256": "05b3167f759d55bd85f9d089d3c28928dc210c7eb3ebabfc7fee869ffb342dba",
+          "markers_lexical_only": {
+            "windows": 10,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "crates/victory-gpu/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Marvisak/VIctory/63bcca43c6a00a758510398fa43096ce7e4f7df0/crates/victory-gpu/Cargo.toml",
+          "sha256": "8b6fffa778667d5cd8707937cbc23abe0a7f494b2cbb7ef4780c0325c69f79c7",
+          "markers_lexical_only": {
+            "windows": 24,
+            "d3d12_dxil": 2,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "crates/victory-hle/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Marvisak/VIctory/63bcca43c6a00a758510398fa43096ce7e4f7df0/crates/victory-hle/Cargo.toml",
+          "sha256": "ff942593032ad10e4b11a6a8efc8e8dacc678c0fb1ac9036393d4aa9c6b1e85f",
+          "markers_lexical_only": {
+            "windows": 28,
+            "d3d12_dxil": 1,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "apps/victory/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Marvisak/VIctory/63bcca43c6a00a758510398fa43096ce7e4f7df0/apps/victory/Cargo.toml",
+          "sha256": "dacac1dd8dcef1d3d23854b8073166ce3a1527bed1fcdb99b2ec88b55b39ad30",
+          "markers_lexical_only": {
+            "windows": 0,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "crates/victory-core/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Marvisak/VIctory/63bcca43c6a00a758510398fa43096ce7e4f7df0/crates/victory-core/Cargo.toml",
+          "sha256": "5891ece2eb531d91acabd66042ff792ec2753f918e80f3ca785352b76bea87ef",
+          "markers_lexical_only": {
+            "windows": 0,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "crates/victory-formats/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Marvisak/VIctory/63bcca43c6a00a758510398fa43096ce7e4f7df0/crates/victory-formats/Cargo.toml",
+          "sha256": "776d5b33d8dd70db15c88cdacd29349bebe746f89c86616338c725aad36e1cf3",
+          "markers_lexical_only": {
+            "windows": 0,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "crates/victory-game/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Marvisak/VIctory/63bcca43c6a00a758510398fa43096ce7e4f7df0/crates/victory-game/Cargo.toml",
+          "sha256": "e9cf2cf22cd7cbc8057c21f66d3c74e5430a76893eae8c38c98b0237b87f9114",
+          "markers_lexical_only": {
+            "windows": 0,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "crates/victory-pe/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Marvisak/VIctory/63bcca43c6a00a758510398fa43096ce7e4f7df0/crates/victory-pe/Cargo.toml",
+          "sha256": "32e889f8bb8cdd3cadce516cd457b93abd48daa8f60187b5661edb73367b2c3c",
+          "markers_lexical_only": {
+            "windows": 0,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "crates/victory-pipeline/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Marvisak/VIctory/63bcca43c6a00a758510398fa43096ce7e4f7df0/crates/victory-pipeline/Cargo.toml",
+          "sha256": "eec2ac125dc2842f19086e528436e906a026821dc5c5ae2dfdf292a1913cf042",
+          "markers_lexical_only": {
+            "windows": 0,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        }
+      ]
+    },
+    {
+      "repo": "Belobug/VIctory-Belobug-AMD",
+      "default_branch": "a-publier",
+      "commit": "cd8dfc06ace7ccb91a19431e74bc2d0de2a10145",
+      "license": "GPL-3.0",
+      "is_github_fork": false,
+      "tree_was_truncated": false,
+      "files": [
+        {
+          "path": "README.md",
+          "source_url": "https://raw.githubusercontent.com/Belobug/VIctory-Belobug-AMD/cd8dfc06ace7ccb91a19431e74bc2d0de2a10145/README.md",
+          "sha256": "601c24c18c7fcb247995580fbe1250356b79a14fa54529fab51914d15c43bf90",
+          "markers_lexical_only": {
+            "windows": 3,
+            "d3d12_dxil": 3,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Belobug/VIctory-Belobug-AMD/cd8dfc06ace7ccb91a19431e74bc2d0de2a10145/Cargo.toml",
+          "sha256": "e8ed9615b9d2241daa132bbba9395edd5314cb446432f5596cf75ef0d338f81a",
+          "markers_lexical_only": {
+            "windows": 3,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "docs/architecture.md",
+          "source_url": "https://raw.githubusercontent.com/Belobug/VIctory-Belobug-AMD/cd8dfc06ace7ccb91a19431e74bc2d0de2a10145/docs/architecture.md",
+          "sha256": "5ed238ac59a45a778110423318fadfdf01ebf047ef308baf3cc83dc8f9abf1e4",
+          "markers_lexical_only": {
+            "windows": 1,
+            "d3d12_dxil": 4,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "crates/victory-loader/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Belobug/VIctory-Belobug-AMD/cd8dfc06ace7ccb91a19431e74bc2d0de2a10145/crates/victory-loader/Cargo.toml",
+          "sha256": "11e57d7ae630dc71962928f30cdba187607e0e74b3b305ad10b742c2be1d5966",
+          "markers_lexical_only": {
+            "windows": 10,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "crates/victory-gpu/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Belobug/VIctory-Belobug-AMD/cd8dfc06ace7ccb91a19431e74bc2d0de2a10145/crates/victory-gpu/Cargo.toml",
+          "sha256": "8ad92d703ba424bba5a898e545eec09c543bf52e2085259a57046ec5bc1d9fe4",
+          "markers_lexical_only": {
+            "windows": 27,
+            "d3d12_dxil": 2,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "crates/victory-hle/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Belobug/VIctory-Belobug-AMD/cd8dfc06ace7ccb91a19431e74bc2d0de2a10145/crates/victory-hle/Cargo.toml",
+          "sha256": "ed2a16e36204e6ff42e1d0228c1ed1ef12e75aa25787b08839d9ec8f29807194",
+          "markers_lexical_only": {
+            "windows": 33,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "apps/victory/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Belobug/VIctory-Belobug-AMD/cd8dfc06ace7ccb91a19431e74bc2d0de2a10145/apps/victory/Cargo.toml",
+          "sha256": "2a136281be5a29125e292456ae6098173d5f12066a25623743a74e101b569de8",
+          "markers_lexical_only": {
+            "windows": 0,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "crates/victory-core/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Belobug/VIctory-Belobug-AMD/cd8dfc06ace7ccb91a19431e74bc2d0de2a10145/crates/victory-core/Cargo.toml",
+          "sha256": "5891ece2eb531d91acabd66042ff792ec2753f918e80f3ca785352b76bea87ef",
+          "markers_lexical_only": {
+            "windows": 0,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "crates/victory-formats/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Belobug/VIctory-Belobug-AMD/cd8dfc06ace7ccb91a19431e74bc2d0de2a10145/crates/victory-formats/Cargo.toml",
+          "sha256": "776d5b33d8dd70db15c88cdacd29349bebe746f89c86616338c725aad36e1cf3",
+          "markers_lexical_only": {
+            "windows": 0,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "crates/victory-game/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Belobug/VIctory-Belobug-AMD/cd8dfc06ace7ccb91a19431e74bc2d0de2a10145/crates/victory-game/Cargo.toml",
+          "sha256": "2f43334d588024c721ff8afdfecd84c9c37d819f4fce59fc3d8cf39bd2b5c802",
+          "markers_lexical_only": {
+            "windows": 0,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "crates/victory-pe/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Belobug/VIctory-Belobug-AMD/cd8dfc06ace7ccb91a19431e74bc2d0de2a10145/crates/victory-pe/Cargo.toml",
+          "sha256": "32e889f8bb8cdd3cadce516cd457b93abd48daa8f60187b5661edb73367b2c3c",
+          "markers_lexical_only": {
+            "windows": 0,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "crates/victory-pipeline/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/Belobug/VIctory-Belobug-AMD/cd8dfc06ace7ccb91a19431e74bc2d0de2a10145/crates/victory-pipeline/Cargo.toml",
+          "sha256": "eec2ac125dc2842f19086e528436e906a026821dc5c5ae2dfdf292a1913cf042",
+          "markers_lexical_only": {
+            "windows": 0,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        }
+      ]
+    },
+    {
+      "repo": "brcly/TuxBox",
+      "default_branch": "main",
+      "commit": "b3184d35e00afc0af30349301a404786d0ea78c0",
+      "license": "Apache-2.0",
+      "is_github_fork": false,
+      "tree_was_truncated": false,
+      "files": [
+        {
+          "path": "README.md",
+          "source_url": "https://raw.githubusercontent.com/brcly/TuxBox/b3184d35e00afc0af30349301a404786d0ea78c0/README.md",
+          "sha256": "4b17375f08b087c73ccc51d5fcbcd68692e9e802fd623f0461b267a2a30e650e",
+          "markers_lexical_only": {
+            "windows": 4,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 5,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/brcly/TuxBox/b3184d35e00afc0af30349301a404786d0ea78c0/Cargo.toml",
+          "sha256": "10bc140432e105ed6ca2fa3a5862f2a5d8d54bd661f4017917041a233eaba9eb",
+          "markers_lexical_only": {
+            "windows": 2,
+            "d3d12_dxil": 1,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "docs/ARCHITECTURE.md",
+          "source_url": "https://raw.githubusercontent.com/brcly/TuxBox/b3184d35e00afc0af30349301a404786d0ea78c0/docs/ARCHITECTURE.md",
+          "sha256": "a8a1e8f571fe5ef7445d553156223a5a4cd3872eec8c154c3d5653a5335547e9",
+          "markers_lexical_only": {
+            "windows": 6,
+            "d3d12_dxil": 8,
+            "vulkan_spirv": 3,
+            "linux": 9,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "docs/PROGRESS.md",
+          "source_url": "https://raw.githubusercontent.com/brcly/TuxBox/b3184d35e00afc0af30349301a404786d0ea78c0/docs/PROGRESS.md",
+          "sha256": "12a4d6ca49a2459e7ab1796504e5b5f81959ba5cbc3e989a468f8f1ee64210ac",
+          "markers_lexical_only": {
+            "windows": 0,
+            "d3d12_dxil": 1,
+            "vulkan_spirv": 0,
+            "linux": 4,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "runtime/acphal/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/brcly/TuxBox/b3184d35e00afc0af30349301a404786d0ea78c0/runtime/acphal/Cargo.toml",
+          "sha256": "b6e671ae41388d1d7b18550485326ec36bf548256fd75dad6116eb8a36576d03",
+          "markers_lexical_only": {
+            "windows": 2,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "runtime/bvh/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/brcly/TuxBox/b3184d35e00afc0af30349301a404786d0ea78c0/runtime/bvh/Cargo.toml",
+          "sha256": "a441d8d29962127b7251d6b9c7649441aab01182d8e1bf8ad00475e745fe68cb",
+          "markers_lexical_only": {
+            "windows": 4,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "runtime/d3d12/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/brcly/TuxBox/b3184d35e00afc0af30349301a404786d0ea78c0/runtime/d3d12/Cargo.toml",
+          "sha256": "f831a18c6fb5e38cffa7e35713f702f9edd09ab28dca0ae2cd1ff4485a22665d",
+          "markers_lexical_only": {
+            "windows": 19,
+            "d3d12_dxil": 2,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "runtime/dxbc/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/brcly/TuxBox/b3184d35e00afc0af30349301a404786d0ea78c0/runtime/dxbc/Cargo.toml",
+          "sha256": "d721e75008f01d52822a75b14cfb72ce07d360b41d08350ff6b7d29d1d27fad1",
+          "markers_lexical_only": {
+            "windows": 0,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "runtime/dxc/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/brcly/TuxBox/b3184d35e00afc0af30349301a404786d0ea78c0/runtime/dxc/Cargo.toml",
+          "sha256": "e645e2daa1735b8c1297169dcbde37bddbd80aa0623ac461f11d0365973777bd",
+          "markers_lexical_only": {
+            "windows": 6,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "runtime/gameinput/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/brcly/TuxBox/b3184d35e00afc0af30349301a404786d0ea78c0/runtime/gameinput/Cargo.toml",
+          "sha256": "b470d93a707b345a0633682556bfbc153558f21694fa181dd1bee809ed01c4e2",
+          "markers_lexical_only": {
+            "windows": 6,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "runtime/xapu/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/brcly/TuxBox/b3184d35e00afc0af30349301a404786d0ea78c0/runtime/xapu/Cargo.toml",
+          "sha256": "d7d98ca1258d44e4c4830aa31ad875b303b4f289c923775b849614abb7af31f0",
+          "markers_lexical_only": {
+            "windows": 6,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        },
+        {
+          "path": "runtime/xcrdapi/Cargo.toml",
+          "source_url": "https://raw.githubusercontent.com/brcly/TuxBox/b3184d35e00afc0af30349301a404786d0ea78c0/runtime/xcrdapi/Cargo.toml",
+          "sha256": "b2bfb8ec239d73d9f1558dfb643b42a678d862735fa10f6faec3c4c61973bf47",
+          "markers_lexical_only": {
+            "windows": 9,
+            "d3d12_dxil": 0,
+            "vulkan_spirv": 0,
+            "linux": 0,
+            "orbis": 0
+          }
+        }
+      ]
+    }
+  ]
+}
